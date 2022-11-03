@@ -22,10 +22,9 @@ def transform(commits, KEY_WORDS):
     return coincidencias
 
 def load(coincidencias):
-    string = json.dumps(coincidencias)
-    file = open("leaks.json",'w')
-    file.write(string)
-    file.close()
+    #string = json.dumps(coincidencias)
+    with open("leaks.json",'w') as file:
+        json.dump(coincidencias, file, indent=2)
 
 if __name__ == '__main__':
 
