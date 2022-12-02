@@ -5,7 +5,7 @@ Ficheros de entrada:
 - carpeta de skale
 
 Ficheros de salida:
-- git_leaks.json
+- leaks.json
 
 Ficheros de transformación:
 - git-leaks.py
